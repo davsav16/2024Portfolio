@@ -50,7 +50,7 @@ const Education = () => {
           <Details
             type="Coding Certificate, Computer Software Engineering"
             time="Mar 2021 - Aug 2021"
-            place="University Of Utah Professional Education Boot Camps"
+            place="University Of Utah Professional Education"
             info="Learned skills to become a full-stack MERN developer. I gained proficiency in the following areas:
 
 Computer Science Applied to JavaScript: Data Structures and Algorithms.
