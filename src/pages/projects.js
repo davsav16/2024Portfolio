@@ -9,6 +9,9 @@ import project1 from "../../public/images/projects/CookieJarProject.png";
 import project2 from "../../public/images/projects/CryptoSearch.png";
 import project3 from "../../public/images/projects/ChatApp.png";
 import project4 from "../../public/images/projects/FoodFestival.png";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -19,7 +22,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -57,7 +66,13 @@ const Project = ({ title, type, img, link, github, summary }) => {
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
         <span className="text-primary font-medium text-xl">{type}</span>
@@ -93,7 +108,7 @@ const projects = () => {
         <title> David McDougal | Projects Page</title>
         <meta
           name="description"
-          content="Learn all about who David McDougal is, where he has worked, were he has studied."
+          content="Learn all about the projects I have previously completed."
         />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center">
