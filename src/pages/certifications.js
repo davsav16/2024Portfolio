@@ -8,9 +8,66 @@ import certification1 from "../../public/images/certifications/UofUCert.png";
 import certification2 from "../../public/images/certifications/CompTIAA+.png";
 import certification3 from "../../public/images/certifications/CompTProject+.png";
 import certification4 from "../../public/images/certifications/ITIL4.png";
-import { motion } from "framer-motion";
+import certification5 from "../../public/images/certifications/LearnJavaScript.png";
+import { motion, useMotionValue } from "framer-motion";
+import { useRef } from "react";
 
 const FramerImage = motion(Image);
+
+const MovingImg = ({ title, img, link }) => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const imgRef = useRef(null);
+
+  function handleMouse(event) {
+    imgRef.current.style.display = "inline-block";
+    x.set(event.pageX);
+    y.set(-10);
+  }
+
+  function handleMouseLeave(event) {
+    imgRef.current.style.display = "none";
+    x.set(0);
+    y.set(0);
+  }
+
+  return (
+    <Link
+      href={link}
+      target="_blank"
+      onMouseMove={handleMouse}
+      onMouseLeave={handleMouseLeave}
+    >
+      <h2 className="capitalize text-xl font-semibold hover:underline">
+        {title}
+      </h2>
+      <FramerImage
+        style={{ x: x, y: y }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
+        ref={imgRef}
+        src={img}
+        alt={title}
+        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+      />
+    </Link>
+  );
+};
+
+const UdemyLinkedIn = ({ img, title, date, link }) => {
+  return (
+    <motion.li
+      initial={{ y: 200 }}
+      whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+      viewport={{ once: true }}
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+    >
+      <MovingImg title={title} img={img} link={link} />
+
+      <span className="text-primary font-semibold pl-4">{date}</span>
+    </motion.li>
+  );
+};
 
 const FeaturedArticle = ({ img, title, summary, link, date }) => {
   return (
@@ -55,7 +112,7 @@ const certifications = () => {
           content="Learn all about the certifications I have gained throughout my software engineering Journey."
         />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-20 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
           <AnimatedText text="Knowledge Is Power!" className="mb-16" />
           <ul className="grid grid-cols-2 gap-16">
@@ -86,6 +143,17 @@ const certifications = () => {
               link="/ITIL4.pdf"
               img={certification4}
               date="March 2023"
+            />
+          </ul>
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+            Udemy and LinkedIn Certifications
+          </h2>
+          <ul>
+            <UdemyLinkedIn
+              title="Codecademy Learn JavaScript Course"
+              date="January 2022"
+              img={certification5}
+              link="/LearnJavaScript.pdf"
             />
           </ul>
         </Layout>
