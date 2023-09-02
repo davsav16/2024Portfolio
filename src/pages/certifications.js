@@ -60,18 +60,20 @@ const UdemyLinkedIn = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light"
     >
       <MovingImg title={title} img={img} link={link} />
 
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </span>
     </motion.li>
   );
 };
 
 const FeaturedArticle = ({ img, title, summary, link, date }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light">
       <div className="absolute  top-0 -right-3 -z-10 h-[103%] w-[101%]  rounded-[2rem] rounded-br-3xl  bg-dark"></div>
       <Link
         href={link}
@@ -84,6 +86,8 @@ const FeaturedArticle = ({ img, title, summary, link, date }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -93,7 +97,7 @@ const FeaturedArticle = ({ img, title, summary, link, date }) => {
       </Link>
       <span className="capitalize font-medium text-dark/75">{date}</span>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold hover:underline">
+      <span className="text-primary font-semibold hover:underline dark:text-primaryDark">
         <Link href={link} target="_blank">
           See My Certification
         </Link>
@@ -112,7 +116,7 @@ const certifications = () => {
           content="Learn all about the certifications I have gained throughout my software engineering Journey."
         />
       </Head>
-      <main className="w-full mb-20 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-20 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Knowledge Is Power!" className="mb-16" />
           <ul className="grid grid-cols-2 gap-16">
