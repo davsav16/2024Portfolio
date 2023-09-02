@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect } from "react";
 
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
@@ -439,7 +440,6 @@ export const CircularText = ({ className, ...rest }) => (
   >
     <g
       transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
       stroke="none"
     >
       <path
