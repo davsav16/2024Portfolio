@@ -167,7 +167,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Food Festival"
-                summary="Allow foodies though out the world to register for different food events, by tickets, and additional details. This app is a PWA so users can use it if they are experience a poor connection or even download it to their mobile device."
+                summary="Allow foodies throughout the world to register for different food events, buy tickets, and add additional details. This app is a PWA so users can use it if they are experience a poor connection or even download it to their mobile device."
                 link="https://davsav16.github.io/improved-food-festival/"
                 type="PWA APP"
                 img={project4}
