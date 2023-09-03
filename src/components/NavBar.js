@@ -36,7 +36,6 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       href={href}
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
-      aria-label="Mobile Navigation Button"
     >
       {title}
       <span
@@ -61,7 +60,7 @@ const NavBar = () => {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
-        className="flex-col justify-center items-center hidden lg:flex"
+        className="fixed flex-col justify-center items-center hidden lg:flex bg-light border-2 p-2 border-solid rounded-lg border-dark dark:bg-dark dark:border-light"
         onClick={handleClick}
       >
         <span
