@@ -36,6 +36,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
       href={href}
       className={`${className} relative group text-light dark:text-dark my-2`}
       onClick={handleClick}
+      aria-label="Mobile Navigation Button"
     >
       {title}
       <span
