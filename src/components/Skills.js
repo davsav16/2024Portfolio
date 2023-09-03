@@ -35,11 +35,11 @@ const Skills = () => {
         <Skill name="Shopify Liquid" x="-20vw" y="-20vw" />
         <Skill name="Next.js" x="15vw" y="-12vw" />
         <Skill name="AWS" x="32vw" y="-5vw" />
-        <Skill name="Javascript" x="0vw" y="-28vw" />
+        <Skill name="Javascript" x="0vw" y="-24vw" />
         <Skill name="JQuery" x="-25vw" y="18vw" />
         <Skill name="SQL" x="28vw" y="-18vw" />
-        <Skill name="Node" x="-5vw" y="31vw" />
-        <Skill name="MySQL" x="10vw" y="28vw" />
+        <Skill name="Node" x="-5vw" y="24vw" />
+        <Skill name="MySQL" x="10vw" y="24vw" />
         <Skill name="Git" x="-23vw" y="-10vw" />
         <Skill name="GraphQL" x="-15vw" y="10vw" />
         <Skill name="React.js" x="15vw" y="-3vw" />
