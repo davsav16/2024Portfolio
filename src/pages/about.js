@@ -93,7 +93,7 @@ const about = () => {
                   IT Certifications
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:4xl">
                   <AnimatedNumbers value={40} />+
                 </span>
@@ -101,7 +101,7 @@ const about = () => {
                   Projects Completed
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:4xl">
                   <AnimatedNumbers value={3} />+
                 </span>
