@@ -11,6 +11,7 @@ import certification4 from "../../public/images/certifications/ITIL4.png";
 import certification5 from "../../public/images/certifications/LearnJavaScript.png";
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
+import { TransitionEffect } from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -116,6 +117,7 @@ const certifications = () => {
           content="Learn all about the certifications I have gained throughout my software engineering Journey."
         />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-20 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
@@ -155,7 +157,7 @@ const certifications = () => {
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
             Udemy and LinkedIn Certifications
           </h2>
-          <ul className="lg:pb-20">
+          <ul className="pb-20">
             <UdemyLinkedIn
               title="Codecademy Learn JavaScript Course"
               date="January 2022"
