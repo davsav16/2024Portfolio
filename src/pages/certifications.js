@@ -9,6 +9,7 @@ import certification2 from "../../public/images/certifications/CompTIAA+.png";
 import certification3 from "../../public/images/certifications/CompTProject+.png";
 import certification4 from "../../public/images/certifications/ITIL4.png";
 import certification5 from "../../public/images/certifications/LearnJavaScript.png";
+import certification6 from "../../public/images/certifications/cloudPractitioner.png"
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
 import { TransitionEffect } from "@/components/TransitionEffect";
@@ -125,6 +126,13 @@ const certifications = () => {
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <ul className="grid grid-cols-2 gap-16 lg:grid-cols-2  md:grid-cols-1 md:gap-y-16">
+            <FeaturedArticle
+              title="AWS Certified Cloud Practitioner"
+              summary="Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects."
+              link="https://www.credly.com/badges/291bd256-6471-4456-94f5-3ebbe09a09d3/public_url"
+              img={certification6}
+              date="October 2023"
+            />
             <FeaturedArticle
               title="Full Stack Coding Boot Camp"
               summary="Badge earners have demonstrated working knowledge of Bootstrap, CSS, Express.js, Git, Github, Heroku, HTML (HTML5), JavaScript, JQuery, MongoDB, MySQL, Node.js, React, SEO, Responsive Design, API/JSON, RESTful API, State Management, Command Line, Database Theory, Agile Methodologies, Quality Assurance Testing, Social Coding Best Practices, Computer Science Fundamentals.. They have shown they can work with a team to build a fully functional web applications."
