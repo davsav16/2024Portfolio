@@ -5,6 +5,8 @@ import { AnimatePresence } from "framer-motion";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import HireMe from "@/components/HireMe";
+import { useEffect, useState } from "react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -13,6 +15,14 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+  const [homePage, setHomePage] = useState(false);
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      setHomePage(true);
+    } else {
+      setHomePage(false);
+    }
+  });
   return (
     <>
       <Head>
@@ -27,6 +37,8 @@ export default function App({ Component, pageProps }) {
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
         <Footer />
+        {homePage ? <HireMe /> : <></>}
+        
       </main>
     </>
   );
