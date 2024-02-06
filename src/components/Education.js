@@ -47,7 +47,7 @@ const Education = () => {
         <ul className="w-full flex flex-col items-start justify-between ml-0 xs:ml-2">
           <Details
             type="Bachelor of Science, Software Engineering"
-            time="Mar 2022-Present"
+            time="Mar 2022-Feb 2024"
             place="Western Governors University"
             info="My degree focused on software engineering in Java, C++, and web development technologies. This program also focuses on data management and structures, software quality assurance, and UX design principles. I received five professional certifications as part of this program: CompTIA's A+ Certification, CompTIA's Project+, AWS Certified Cloud Practitioner, and ITIL Foundation Certification."
           />
