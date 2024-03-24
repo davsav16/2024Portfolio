@@ -9,7 +9,8 @@ import certification2 from "../../public/images/certifications/CompTIAA+.png";
 import certification3 from "../../public/images/certifications/CompTProject+.png";
 import certification4 from "../../public/images/certifications/ITIL4.png";
 import certification5 from "../../public/images/certifications/LearnJavaScript.png";
-import certification6 from "../../public/images/certifications/cloudPractitioner.png"
+import certification6 from "../../public/images/certifications/cloudPractitioner.png";
+import certification7 from "../../public/images/certifications/ShopifyFoundations.png";
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
 import { TransitionEffect } from "@/components/TransitionEffect";
@@ -134,11 +135,11 @@ const certifications = () => {
               date="October 2023"
             />
             <FeaturedArticle
-              title="Full Stack Coding Boot Camp"
-              summary="Badge earners have demonstrated working knowledge of Bootstrap, CSS, Express.js, Git, Github, Heroku, HTML (HTML5), JavaScript, JQuery, MongoDB, MySQL, Node.js, React, SEO, Responsive Design, API/JSON, RESTful API, State Management, Command Line, Database Theory, Agile Methodologies, Quality Assurance Testing, Social Coding Best Practices, Computer Science Fundamentals.. They have shown they can work with a team to build a fully functional web applications."
-              link="https://www.credly.com/badges/25741557-dba3-4325-b713-663535ee362a"
-              img={certification1}
-              date="September 2021"
+              title="Shopify Foundations Certification"
+              summary="We will educate Shopify Certification participants on the e-commerce industry's evolving standards and trends in concert with key Shopify product/service offerings. An official Shopify Partner Certification is a stamp of approval for Partners with whom Merchants choose to work alongside. This is an introductory professional development certification program backed by educational data science as well as independent evaluators."
+              link="https://www.credly.com/badges/47d791e9-c755-4d25-b9d2-3ad9c4dbec94/public_url"
+              img={certification7}
+              date="March 2024"
             />
             <FeaturedArticle
               title="CompTIA A+ ce Certification"
@@ -160,6 +161,13 @@ const certifications = () => {
               link="/ITIL4.pdf"
               img={certification4}
               date="March 2023"
+            />
+            <FeaturedArticle
+              title="Full Stack Coding Boot Camp"
+              summary="Badge earners have demonstrated working knowledge of Bootstrap, CSS, Express.js, Git, Github, Heroku, HTML (HTML5), JavaScript, JQuery, MongoDB, MySQL, Node.js, React, SEO, Responsive Design, API/JSON, RESTful API, State Management, Command Line, Database Theory, Agile Methodologies, Quality Assurance Testing, Social Coding Best Practices, Computer Science Fundamentals.. They have shown they can work with a team to build a fully functional web applications."
+              link="https://www.credly.com/badges/25741557-dba3-4325-b713-663535ee362a"
+              img={certification1}
+              date="September 2021"
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
