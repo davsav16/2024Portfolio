@@ -12,6 +12,8 @@ import certification5 from "../../public/images/certifications/LearnJavaScript.p
 import certification6 from "../../public/images/certifications/cloudPractitioner.png";
 import certification7 from "../../public/images/certifications/ShopifyFoundations.png";
 import certification8 from "../../public/images/certifications/HeadlessAtShopifyForDevelopers.png";
+import certification9 from "../../public/images/certifications/ShopifyLiquidDevelopers.png";
+
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
 import { TransitionEffect } from "@/components/TransitionEffect";
@@ -140,6 +142,13 @@ const certifications = () => {
               summary="This Certification signifies that the credential holder understands Shopify’s headless framework, tooling, and hosting options in order to prepare, implement, and optimize a custom storefront."
               link="https://www.credly.com/badges/a3acc0a7-f5db-47a4-999c-3373bdabf1e5/public_url"
               img={certification8}
+              date="March 2024"
+            />
+            <FeaturedArticle
+              title="Liquid Storefronts for Theme Developers Certification"
+              summary="This Certification signifies that the credential holder understands the principles and best practices to optimize a Shopify theme using Liquid, in order to deliver exceptional user experiences for Shopify merchants and their customers."
+              link="https://www.credly.com/badges/bf928fb1-3727-4806-8de1-983b9417e8e9/public_url"
+              img={certification9}
               date="March 2024"
             />
             <FeaturedArticle
