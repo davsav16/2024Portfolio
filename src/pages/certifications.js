@@ -13,6 +13,7 @@ import certification6 from "../../public/images/certifications/cloudPractitioner
 import certification7 from "../../public/images/certifications/ShopifyFoundations.png";
 import certification8 from "../../public/images/certifications/HeadlessAtShopifyForDevelopers.png";
 import certification9 from "../../public/images/certifications/ShopifyLiquidDevelopers.png";
+import certification10 from "../../public/images/certifications/HeadlessAtShopifyForBusinessConsultants.png";
 
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
@@ -142,6 +143,13 @@ const certifications = () => {
               summary="This Certification signifies that the credential holder understands Shopify’s headless framework, tooling, and hosting options in order to prepare, implement, and optimize a custom storefront."
               link="https://www.credly.com/badges/a3acc0a7-f5db-47a4-999c-3373bdabf1e5/public_url"
               img={certification8}
+              date="March 2024"
+            />
+            <FeaturedArticle
+              title="Headless at Shopify for Business Consultants Certification"
+              summary="This Certification signifies that the credential holder understands the principles and best practices to make a tailored custom storefront recommendation, and guide a client through all phases of a headless implementation."
+              link="https://www.credly.com/badges/f2b13b06-4bdb-4c9c-a959-a64fa4e26a40/public_url"
+              img={certification10}
               date="March 2024"
             />
             <FeaturedArticle
