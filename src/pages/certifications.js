@@ -14,7 +14,7 @@ import certification7 from "../../public/images/certifications/ShopifyFoundation
 import certification8 from "../../public/images/certifications/HeadlessAtShopifyForDevelopers.png";
 import certification9 from "../../public/images/certifications/ShopifyLiquidDevelopers.png";
 import certification10 from "../../public/images/certifications/HeadlessAtShopifyForBusinessConsultants.png";
-import certification11 from "../../public/images/certifications/LearnTypeScript.png";
+import certification11 from "../../public/images/certifications/LearnTypescript.png";
 
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
