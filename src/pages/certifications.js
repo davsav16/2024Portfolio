@@ -14,6 +14,7 @@ import certification7 from "../../public/images/certifications/ShopifyFoundation
 import certification8 from "../../public/images/certifications/HeadlessAtShopifyForDevelopers.png";
 import certification9 from "../../public/images/certifications/ShopifyLiquidDevelopers.png";
 import certification10 from "../../public/images/certifications/HeadlessAtShopifyForBusinessConsultants.png";
+import certification11 from "../../public/images/certifications/LearnTypeScript.png";
 
 import { motion, useMotionValue } from "framer-motion";
 import { useRef } from "react";
@@ -196,9 +197,15 @@ const certifications = () => {
             />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
-            Udemy and LinkedIn Certifications
+            Additional Certifications
           </h2>
           <ul className="pb-20">
+            <UdemyLinkedIn
+              title="Learn Typescript"
+              date="April 2024"
+              img={certification11}
+              link="/LearnTypescript.pdf"
+            />
             <UdemyLinkedIn
               title="Codecademy Learn JavaScript Course"
               date="January 2022"

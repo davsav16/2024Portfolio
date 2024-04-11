@@ -9,6 +9,8 @@ import project1 from "../../public/images/projects/CookieJarProject.png";
 import project2 from "../../public/images/projects/CryptoSearch.png";
 import project3 from "../../public/images/projects/ChatApp.png";
 import project4 from "../../public/images/projects/FoodFestival.png";
+import project5 from "../../public/images/projects/RealEstate.png";
+import project6 from "../../public/images/projects/TicketingApp.png";
 import { motion } from "framer-motion";
 import { TransitionEffect } from "@/components/TransitionEffect";
 
@@ -133,6 +135,26 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Ticketing App"
+                summary="Demo ticketing app that any user could use to create tickets and track their progress. Created using Next.js, React, MongoDB, and Tailwind."
+                link="https://ticketing-app-opal.vercel.app/"
+                type="Website"
+                img={project6}
+                github="https://github.com/davsav16/ticketing-app"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Real Estate App"
+                summary="Created a Demo Real Estate App using dummy data in Next.js and using Chakra UI for the components and styling."
+                link="https://real-estate-app-iota-nine.vercel.app/"
+                type="Website"
+                img={project5}
+                github="https://github.com/davsav16/real-estate-app"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title="Cookie Jar React App"
@@ -174,26 +196,6 @@ const projects = () => {
                 github="https://github.com/davsav16/improved-food-festival"
               />
             </div>
-            {/* <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Food Festival"
-                summary="Allow foodies though out the world to register for different food events, by tickets, and additional details. This app is a PWA so users can use it if they are experience a poor connection or even download it to their mobile device."
-                link="https://davsav16.github.io/improved-food-festival/"
-                type="PWA APP"
-                img={project4}
-                github="https://github.com/davsav16/improved-food-festival"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Cookie Jar React App"
-                summary="Basic E-commerce app for buying cookies. Using ButterCMS, Snipcart, and Chakra UI. This has the basic layout for a shop with a pull out cart and checkout experience. Please note that you cannot actually buy anything, as the there is no backend set up, but it would be very easy to implement."
-                link="https://mcdougal-cookies.netlify.app/"
-                type="Featured Project"
-                img={project1}
-                github="https://github.com/davsav16/Ecomerce-butter"
-              />
-            </div> */}
           </div>
         </Layout>
       </main>
