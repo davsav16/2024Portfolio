@@ -11,6 +11,7 @@ import project3 from "../../public/images/projects/ChatApp.png";
 import project4 from "../../public/images/projects/FoodFestival.png";
 import project5 from "../../public/images/projects/RealEstate.png";
 import project6 from "../../public/images/projects/TicketingApp.png";
+import project7 from "../../public/images/projects/Aora.png";
 import { motion } from "framer-motion";
 import { TransitionEffect } from "@/components/TransitionEffect";
 
@@ -135,6 +136,16 @@ const projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Cookie Jar React App"
+                summary="I created this react app as a way to improve my skills in React Native. I have used React, Next.js, and Typscript in previous projects, but this was my first time in putting those skills to use to develop a native application. Technologies Used: Expo, Native Wind, Appwrite,React Native, Expo AV, Expo Document Picker, Expo Image Picker."
+                link="https://github.com/davsav16/reactNativeVideoApp/tree/main"
+                type="React Native App"
+                img={project7}
+                github="https://github.com/davsav16/reactNativeVideoApp/tree/main"
+              />
+            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Ticketing App"
