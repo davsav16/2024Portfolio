@@ -12,6 +12,7 @@ import project4 from "../../public/images/projects/FoodFestival.png";
 import project5 from "../../public/images/projects/RealEstate.png";
 import project6 from "../../public/images/projects/TicketingApp.png";
 import project7 from "../../public/images/projects/Aora.png";
+import project8 from "../../public/images/projects/LiveDocs.png";
 import { motion } from "framer-motion";
 import { TransitionEffect } from "@/components/TransitionEffect";
 
@@ -138,7 +139,18 @@ const projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Cookie Jar React App"
+                title="Collaborative Realtime Editor"
+                summary="A real time document editor created using Next.js, Liveblocks, Clerk.com, and Sentry.com. Created using Next.js to provide full stack ability, Tailwind was used for styling the components,Sentry was enabled on the app to allow for error handling and tracking, and Liveblocks was used as the editor"
+                link="https://collaborative-editor-alpha.vercel.app/"
+                type="Next.js FullStack App"
+                img={project8}
+                github="https://github.com/davsav16/collaborative-editor"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                title="React Native AI Photo"
                 summary="I created this react app as a way to improve my skills in React Native. I have used React, Next.js, and Typscript in previous projects, but this was my first time in putting those skills to use to develop a native application. Technologies Used: Expo, Native Wind, Appwrite,React Native, Expo AV, Expo Document Picker, Expo Image Picker."
                 link="https://github.com/davsav16/reactNativeVideoApp/tree/main"
                 type="React Native App"
