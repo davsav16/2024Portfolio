@@ -140,7 +140,7 @@ const projects = () => {
             <div className="col-span-12">
               <FeaturedProject
                 title="Collaborative Realtime Editor"
-                summary="A real time document editor created using Next.js, Liveblocks, Clerk.com, and Sentry.com. Created using Next.js to provide full stack ability, Tailwind was used for styling the components,Sentry was enabled on the app to allow for error handling and tracking, and Liveblocks was used as the editor"
+                summary="A real time document editor created using Next.js, Liveblocks, Clerk.com, and Sentry.com. Created using Next.js to provide full stack ability, Tailwind was used for styling the components,Sentry was enabled on the app to allow for error handling and tracking, and Liveblocks was used as the editor."
                 link="https://collaborative-editor-alpha.vercel.app/"
                 type="Next.js FullStack App"
                 img={project8}
